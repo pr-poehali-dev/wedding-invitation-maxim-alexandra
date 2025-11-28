@@ -28,9 +28,25 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#FAF7F2] via-[#F5F1E8] to-[#E8E1D5]">
       <section className="min-h-screen flex flex-col items-center justify-center relative px-4 overflow-hidden">
-        <div className="absolute top-10 left-10 w-16 h-16 rounded-full bg-white/40 animate-shimmer blur-sm" />
-        <div className="absolute bottom-20 right-20 w-20 h-20 rounded-full bg-white/30 animate-shimmer blur-sm" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/3 right-1/4 w-12 h-12 rounded-full bg-white/50 animate-shimmer blur-sm" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-10 left-10 w-3 h-3 rounded-full bg-white/60 shadow-md" />
+        <div className="absolute top-16 left-12 w-4 h-4 rounded-full bg-white/50 shadow-md" />
+        <div className="absolute top-24 left-10 w-3 h-3 rounded-full bg-white/70 shadow-md" />
+        <div className="absolute top-32 left-14 w-5 h-5 rounded-full bg-white/40 shadow-md" />
+        
+        <div className="absolute top-20 right-16 w-4 h-4 rounded-full bg-white/60 shadow-md" />
+        <div className="absolute top-28 right-14 w-3 h-3 rounded-full bg-white/50 shadow-md" />
+        <div className="absolute top-36 right-18 w-5 h-5 rounded-full bg-white/70 shadow-md" />
+        <div className="absolute top-44 right-16 w-3 h-3 rounded-full bg-white/40 shadow-md" />
+        
+        <div className="absolute bottom-20 left-20 w-4 h-4 rounded-full bg-white/60 shadow-md" />
+        <div className="absolute bottom-28 left-22 w-3 h-3 rounded-full bg-white/50 shadow-md" />
+        <div className="absolute bottom-36 left-20 w-5 h-5 rounded-full bg-white/70 shadow-md" />
+        <div className="absolute bottom-44 left-24 w-3 h-3 rounded-full bg-white/40 shadow-md" />
+        
+        <div className="absolute bottom-24 right-24 w-3 h-3 rounded-full bg-white/60 shadow-md" />
+        <div className="absolute bottom-32 right-22 w-4 h-4 rounded-full bg-white/50 shadow-md" />
+        <div className="absolute bottom-40 right-26 w-3 h-3 rounded-full bg-white/70 shadow-md" />
+        <div className="absolute bottom-48 right-24 w-5 h-5 rounded-full bg-white/40 shadow-md" />
         
         <div className="text-center space-y-6 animate-fade-in z-10">
           <h1 className="font-script text-7xl md:text-9xl text-foreground tracking-wide">
@@ -41,9 +57,26 @@ const Index = () => {
             <p className="text-2xl md:text-3xl font-light tracking-widest">26.04.2026</p>
             <div className="h-px w-20 bg-primary/30" />
           </div>
-          <p className="text-lg md:text-xl font-light text-muted-foreground mt-8 tracking-wide">
-            Приглашаем вас разделить с нами этот особенный день
-          </p>
+          
+          <div 
+            className="max-w-3xl mx-auto mt-16 p-8 md:p-12 relative"
+            style={{
+              backgroundImage: `url('https://cdn.poehali.dev/projects/91d31cc8-18bd-41ea-aa7c-5e3247d93089/files/bc171bf5-68e9-49ae-89ce-431bc50774ea.jpg')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              boxShadow: '0 10px 40px rgba(0,0,0,0.1)'
+            }}
+          >
+            <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" />
+            <div className="relative z-10 space-y-4">
+              <h2 className="font-script text-4xl md:text-5xl text-foreground">
+                Дорогие наши друзья и близкие
+              </h2>
+              <p className="text-base md:text-lg font-light text-foreground/90 leading-relaxed">
+                Скоро мы станем семьей — и с радостью приглашаем вас<br className="hidden md:block" /> разделить с нами этот важный день
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
